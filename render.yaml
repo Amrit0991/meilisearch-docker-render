@@ -4,7 +4,7 @@ services:
   env: docker
   repo: https://github.com/Amrit0991/meilisearch-docker-render.git
   plan: standard
-  healthCheckPath: /
+  healthCheckPath: /heartbeat
   envVars:
   - key: MEILI_HTTP_ADDR
     value: 0.0.0.0:80
