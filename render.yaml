@@ -16,3 +16,5 @@ services:
     generateValue: true
   - key: MEILI_DB_PATH
     value: /meili-data
+  - key: MEILI_ENV
+    value: development
