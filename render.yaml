@@ -4,7 +4,6 @@ services:
   env: docker
   repo: https://github.com/Amrit0991/meilisearch-docker-render.git
   plan: standard
-  healthCheckPath: /heartbeat
   disk:
     name: meili-data
     mountPath: /meili-data
