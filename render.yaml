@@ -5,8 +5,14 @@ services:
   repo: https://github.com/Amrit0991/meilisearch-docker-render.git
   plan: standard
   healthCheckPath: /heartbeat
+  disk:
+    name: meili-data
+    mountPath: /meili-data
+    sizeGB: 5  
   envVars:
   - key: MEILI_HTTP_ADDR
     value: 0.0.0.0:80
   - key: MEILI_MASTER_KEY
     generateValue: true
+  - key: MEILI_DB_PATH
+    value: /meili-data
